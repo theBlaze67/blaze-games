@@ -32,7 +32,7 @@ nav{
     border-radius: 10px;
 }
 .nav-right ul li:hover{
-    background-color: #ff9900;
+    background-color: #0088ff;
     transition: .3s ease-out;
 }
 .search-bar input{
@@ -46,4 +46,63 @@ nav{
 }
 .welcome-section{
     width: 100%;
+    background: url('/Img/goku.jpg');
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    animation: changebg 8s 3s infinite ease-in;
+}
+.welcome-overlay{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,rgba(0, 0, 0, 0.897),rgba(0, 0, 0, 0.192));
+}
+.welcome-text{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    background: rgba(0,0,0,0);
+}
+.welcome-text p{
+    font-size: 1.3rem;
+}
+.welcome-text a{
+    text-decoration: none;
+    color: white;
+    background-color: #0088ff;
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    align-self: center;
+    margin: 10px;
+}
+@keyframes changebg{
+    0%{
+        background: url('/Img/goku.jpg');
+        background-size: cover;
+        background-position: center center;
+    }
+    25%{
+        background: url('/Img/goku2.jpg');
+        background-size: cover;
+        background-position: center center;
+    }
+    50%{
+        background: url('/Img/wdhacker.jpg');
+        background-size: cover;
+        background-position: center center;
+    }
+    75%{
+        background: url('/Img/goku3.jpg.jpg');
+        background-size: cover;
+        background-position: center center;
+    }
+    100%{
+        background: url('/Img/goku4.jpg');
+        background-size: cover;
+        background-position: center center;
+    }
 }
