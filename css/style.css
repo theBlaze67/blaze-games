@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+body{
+    background-color: black;
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: black;
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+}
+.nav-right ul{
+    display: flex;
+    list-style: none;
+}
+.nav-right ul li{
+    margin: 0 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.nav-right ul li:hover{
+    background-color: #ff9900;
+    transition: .3s ease-out;
+}
+.search-bar input{
+    border: none;
+    outline: none;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+#element{
+    font-size: 4rem;
+}
+.welcome-section{
+    width: 100%;
+}
