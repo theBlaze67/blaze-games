@@ -64,6 +64,7 @@ nav{
     width: 50%;
     height: 100%;
     background: rgba(0,0,0,0);
+    justify-content: center;
 }
 .welcome-text p{
     font-size: 1.3rem;
@@ -78,6 +79,12 @@ nav{
     border-radius: 10px;
     align-self: center;
     margin: 10px;
+}
+.ri-menu-line{
+    font-size: 2rem;
+    position: absolute;
+    top: 15px;
+    right: 10px;
 }
 @keyframes changebg{
     0%{
@@ -104,5 +111,41 @@ nav{
         background: url('/Img/goku4.jpg');
         background-size: cover;
         background-position: center center;
+    }
+}
+@media (max-width : 500px) {
+    nav{
+        flex-direction: column;
+    }
+    .nav-right{
+        flex-direction: column;
+        width: 100%;
+        display: none;
+    }
+    .nav-right ul{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    .nav-right ul li{
+        width: 100%;
+        margin: 10px 0;
+
+    }
+    .brand-logo{
+        width: 100%;
+    }
+    .search-bar{
+        width: 100%;
+    }
+    .search-bar input{
+        width: 100%;
+    }
+    .nav-right.active{
+        display: flex;
+    }
+    .welcome-text{
+        width: 100%;
     }
 }
